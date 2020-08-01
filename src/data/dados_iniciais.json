@@ -1,6 +1,33 @@
 {
   "categorias": [
     {
+      "titulo": "Favoritos do Kuris",
+      "link": "t.me/Kuris",
+      "cor": "#fcdb03",
+      "link_extra": {
+        "text": "Para Descontrair um pouco",
+        "url": "t.me/Kuris"
+      },
+      "videos": [
+        {
+          "titulo": "Taishi feat. みとせのりこ - Rainscall",
+          "url": "https://www.youtube.com/watch?v=0b2N1vrmshs"
+        },
+        {
+          "titulo": "Digimon Frontier Abertura Completa em Português - Fire (PT-BR)",
+          "url": "https://www.youtube.com/watch?v=BdsjcUqy9_I"
+        },
+        {
+          "titulo": "SAO: Alicization - Guerra do Submundo Parte 2 Abertura Completa (ReoNa - ANIMA) (SUB ENG & PT-BR",
+          "url": "https://www.youtube.com/watch?v=ISV28NbBDlc"
+        },
+        {
+          "titulo": "キャプテン・アース The Glory Days-Tia          ",
+          "url": "https://www.youtube.com/watch?v=qrHMVEvl63A"
+        }
+      ]
+    },
+    {
       "titulo": "Front End",
       "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#6BD1FF",
@@ -40,33 +67,6 @@
         {
           "titulo": "Base para aprender os frameworks",
           "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }
-      ]
-    },
-    {
-      "titulo": "Favoritos do Kuris",
-      "link": "t.me/Kuris",
-      "cor": "#fcdb03",
-      "link_extra": {
-        "text": "Para Descontrair um pouco",
-        "url": "t.me/Kuris"
-      },
-      "videos": [
-        {
-          "titulo": "Taishi feat. みとせのりこ - Rainscall",
-          "url": "https://www.youtube.com/watch?v=0b2N1vrmshs"
-        },
-        {
-          "titulo": "Digimon Frontier Abertura Completa em Português - Fire (PT-BR)",
-          "url": "https://www.youtube.com/watch?v=BdsjcUqy9_I"
-        },
-        {
-          "titulo": "SAO: Alicization - Guerra do Submundo Parte 2 Abertura Completa (ReoNa - ANIMA) (SUB ENG & PT-BR",
-          "url": "https://www.youtube.com/watch?v=ISV28NbBDlc"
-        },
-        {
-          "titulo": "キャプテン・アース The Glory Days-Tia          ",
-          "url": "https://www.youtube.com/watch?v=qrHMVEvl63A"
         }
       ]
     },
