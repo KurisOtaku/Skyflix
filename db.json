@@ -1,281 +1,277 @@
-[
-    {
-        "categorias": [
-            {
-                "id": 1,
-                "titulo": "Favoritos do Kuris",
-                "link": "t.me/Kuris",
-                "cor": "#fcdb03",
-                "link_extra": {
-                    "text": "Para Descontrair um pouco",
-                    "url": "t.me/Kuris"
-                }
-            },
-            {
-                "id": 2,
-                "titulo": "Front End",
-                "link": "https://www.alura.com.br/formacao-front-end",
-                "cor": "#6BD1FF",
-                "link_extra": {
-                    "text": "Formação de Front End na Alura",
-                    "url": "https://www.alura.com.br/cursos-online-front-end"
-                }
-            },
-            {
-                "id": 3,
-                "titulo": "Back End",
-                "cor": "#00C86F",
-                "link_extra": {
-                    "text": "Cursos de Back End na Alura",
-                    "url": "https://www.alura.com.br/cursos-online-programacao"
-                }
-            },
-            {
-                "id": 4,
-                "titulo": "Data Science e Inteligência Artificial",
-                "cor": "#9cd33b",
-                "link_extra": {
-                    "text": "Cursos de Data Science na Alura",
-                    "url": "https://www.alura.com.br/formacao-data-science"
-                }
-            },
-            {
-                "id": 5,
-                "titulo": "Filmes",
-                "cor": "orange"
-            },
-            {
-                "id": 6,
-                "titulo": "Games",
-                "cor": "red",
-                "link_extra": {
-                    "text": "Formação de Jogos na Alura",
-                    "url": "https://www.alura.com.br/formacao-jogos-unity"
-                }
-            },
-            {
-                "id": 7,
-                "titulo": "Aprendendo a aprender tecnologia",
-                "cor": "#6b5be2",
-                "link_extra": {
-                    "text": "Curso sobre aprendizado na Alura",
-                    "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-                }
+{
+    "categorias": [
+        {
+            "id": 1,
+            "titulo": "Favoritos do Kuris",
+            "link": "t.me/Kuris",
+            "cor": "#fcdb03",
+            "link_extra": {
+                "text": "Para Descontrair um pouco",
+                "url": "t.me/Kuris"
             }
-        ]
-    },
-    {
-        "videos": [
-            {
-                "id": 1,
-                "categoriaId": 1,
-                "titulo": "Taishi feat. みとせのりこ - Rainscall",
-                "url": "https://www.youtube.com/watch?v=0b2N1vrmshs"
-            },
-            {
-                "id": 2,
-                "categoriaId": 1,
-                "titulo": "Digimon Frontier Abertura Completa em Português - Fire (PT-BR)",
-                "url": "https://www.youtube.com/watch?v=BdsjcUqy9_I"
-            },
-            {
-                "id": 3,
-                "categoriaId": 1,
-                "titulo": "SAO: Alicization - Guerra do Submundo Parte 2 Abertura Completa (ReoNa - ANIMA) (SUB ENG & PT-BR",
-                "url": "https://www.youtube.com/watch?v=ISV28NbBDlc"
-            },
-            {
-                "id": 4,
-                "categoriaId": 1,
-                "titulo": "キャプテン・アース The Glory Days-Tia",
-                "url": "https://www.youtube.com/watch?v=qrHMVEvl63A"
-            },
-            {
-                "id": 5,
-                "categoriaId": 2,
-                "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
-            },
-            {
-                "id": 6,
-                "categoriaId": 2,
-                "titulo": "SEO com React",
-                "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-            },
-            {
-                "id": 7,
-                "categoriaId": 2,
-                "titulo": "Componentização com VanillaJS #AluraMais",
-                "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
-            },
-            {
-                "id": 8,
-                "categoriaId": 2,
-                "titulo": "Pare de chutar e aprenda a display: inline #01",
-                "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
-            },
-            {
-                "id": 9,
-                "categoriaId": 2,
-                "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-                "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
-            },
-            {
-                "id": 10,
-                "categoriaId": 2,
-                "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-            },
-            {
-                "id": 11,
-                "categoriaId": 2,
-                "titulo": "Novidades do Angular v9",
-                "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-            },
-            {
-                "id": 12,
-                "categoriaId": 2,
-                "titulo": "Base para aprender os frameworks",
-                "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-            },
-            {
-                "id": 13,
-                "categoriaId": 3,
-                "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-                "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
-            },
-            {
-                "id": 14,
-                "categoriaId": 3,
-                "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-                "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-            },
-            {
-                "id": 15,
-                "categoriaId": 3,
-                "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-                "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-            },
-            {
-                "id": 16,
-                "categoriaId": 3,
-                "titulo": "API: Dicionário do Programador",
-                "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-            },
-            {
-                "id": 17,
-                "categoriaId": 3,
-                "titulo": "Usando Git Direito",
-                "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-            },
-            {
-                "id": 18,
-                "categoriaId": 4,
-                "titulo": "Teste de Turing",
-                "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
-            },
-            {
-                "id": 19,
-                "categoriaId": 4,
-                "titulo": "O que é Data Science?",
-                "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
-            },
-            {
-                "id": 20,
-                "categoriaId": 4,
-                "titulo": "Melhor forma de aprender Python",
-                "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-            },
-            {
-                "id": 21,
-                "categoriaId": 4,
-                "titulo": "Como ingressar no mercado de Data Science?",
-                "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
-            },
-            {
-                "id": 22,
-                "categoriaId": 5,
-                "titulo": "Interestellar",
-                "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-            },
-            {
-                "id": 23,
-                "categoriaId": 5,
-                "titulo": "Gattaca",
-                "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-            },
-            {
-                "id": 24,
-                "categoriaId": 5,
-                "titulo": "A Chegada",
-                "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-            },
-            {
-                "id": 25,
-                "categoriaId": 5,
-                "titulo": "Feitiço do Tempo",
-                "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-            },
-            {
-                "id": 26,
-                "categoriaId": 6,
-                "titulo": "Final Fantasy 7",
-                "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
-            },
-            {
-                "id": 27,
-                "categoriaId": 6,
-                "titulo": "Assassins Creed Valhalla",
-                "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
-            },
-            {
-                "id": 28,
-                "categoriaId": 6,
-                "titulo": "God of War 4",
-                "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
-            },
-            {
-                "id": 29,
-                "categoriaId": 6,
-                "titulo": "Resident Evil 8",
-                "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-            },
-            {
-                "id": 30,
-                "categoriaId": 6,
-                "titulo": "Pokémon Let's Go Pikachu/Eevee",
-                "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
-            },
-            {
-                "id": 31,
-                "categoriaId": 7,
-                "titulo": "Como estudar melhor?",
-                "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
-            },
-            {
-                "id": 32,
-                "categoriaId": 7,
-                "titulo": "Faculdade",
-                "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
-            },
-            {
-                "id": 33,
-                "categoriaId": 7,
-                "titulo": "Frameworks",
-                "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-            },
-            {
-                "id": 34,
-                "categoriaId": 7,
-                "titulo": "A mágica do Aprendizado",
-                "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
-            },
-            {
-                "id": 35,
-                "categoriaId": 7,
-                "titulo": "Como aprender a programar?",
-                "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        },
+        {
+            "id": 2,
+            "titulo": "Front End",
+            "link": "https://www.alura.com.br/formacao-front-end",
+            "cor": "#6BD1FF",
+            "link_extra": {
+                "text": "Formação de Front End na Alura",
+                "url": "https://www.alura.com.br/cursos-online-front-end"
             }
-        ]
-    }
-]
+        },
+        {
+            "id": 3,
+            "titulo": "Back End",
+            "cor": "#00C86F",
+            "link_extra": {
+                "text": "Cursos de Back End na Alura",
+                "url": "https://www.alura.com.br/cursos-online-programacao"
+            }
+        },
+        {
+            "id": 4,
+            "titulo": "Data Science e Inteligência Artificial",
+            "cor": "#9cd33b",
+            "link_extra": {
+                "text": "Cursos de Data Science na Alura",
+                "url": "https://www.alura.com.br/formacao-data-science"
+            }
+        },
+        {
+            "id": 5,
+            "titulo": "Filmes",
+            "cor": "orange"
+        },
+        {
+            "id": 6,
+            "titulo": "Games",
+            "cor": "red",
+            "link_extra": {
+                "text": "Formação de Jogos na Alura",
+                "url": "https://www.alura.com.br/formacao-jogos-unity"
+            }
+        },
+        {
+            "id": 7,
+            "titulo": "Aprendendo a aprender tecnologia",
+            "cor": "#6b5be2",
+            "link_extra": {
+                "text": "Curso sobre aprendizado na Alura",
+                "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+            }
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "categoriaId": 1,
+            "titulo": "Taishi feat. みとせのりこ - Rainscall",
+            "url": "https://www.youtube.com/watch?v=0b2N1vrmshs"
+        },
+        {
+            "id": 2,
+            "categoriaId": 1,
+            "titulo": "Digimon Frontier Abertura Completa em Português - Fire (PT-BR)",
+            "url": "https://www.youtube.com/watch?v=BdsjcUqy9_I"
+        },
+        {
+            "id": 3,
+            "categoriaId": 1,
+            "titulo": "SAO: Alicization - Guerra do Submundo Parte 2 Abertura Completa (ReoNa - ANIMA) (SUB ENG & PT-BR",
+            "url": "https://www.youtube.com/watch?v=ISV28NbBDlc"
+        },
+        {
+            "id": 4,
+            "categoriaId": 1,
+            "titulo": "キャプテン・アース The Glory Days-Tia",
+            "url": "https://www.youtube.com/watch?v=qrHMVEvl63A"
+        },
+        {
+            "id": 5,
+            "categoriaId": 2,
+            "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+            "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+        },
+        {
+            "id": 6,
+            "categoriaId": 2,
+            "titulo": "SEO com React",
+            "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+        },
+        {
+            "id": 7,
+            "categoriaId": 2,
+            "titulo": "Componentização com VanillaJS #AluraMais",
+            "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+        },
+        {
+            "id": 8,
+            "categoriaId": 2,
+            "titulo": "Pare de chutar e aprenda a display: inline #01",
+            "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+        },
+        {
+            "id": 9,
+            "categoriaId": 2,
+            "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
+            "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+        },
+        {
+            "id": 10,
+            "categoriaId": 2,
+            "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+            "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+        },
+        {
+            "id": 11,
+            "categoriaId": 2,
+            "titulo": "Novidades do Angular v9",
+            "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+        },
+        {
+            "id": 12,
+            "categoriaId": 2,
+            "titulo": "Base para aprender os frameworks",
+            "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+            "id": 13,
+            "categoriaId": 3,
+            "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
+            "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+        },
+        {
+            "id": 14,
+            "categoriaId": 3,
+            "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+            "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+        },
+        {
+            "id": 15,
+            "categoriaId": 3,
+            "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
+            "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+        },
+        {
+            "id": 16,
+            "categoriaId": 3,
+            "titulo": "API: Dicionário do Programador",
+            "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+        },
+        {
+            "id": 17,
+            "categoriaId": 3,
+            "titulo": "Usando Git Direito",
+            "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+        },
+        {
+            "id": 18,
+            "categoriaId": 4,
+            "titulo": "Teste de Turing",
+            "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+        },
+        {
+            "id": 19,
+            "categoriaId": 4,
+            "titulo": "O que é Data Science?",
+            "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+        },
+        {
+            "id": 20,
+            "categoriaId": 4,
+            "titulo": "Melhor forma de aprender Python",
+            "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+        },
+        {
+            "id": 21,
+            "categoriaId": 4,
+            "titulo": "Como ingressar no mercado de Data Science?",
+            "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+        },
+        {
+            "id": 22,
+            "categoriaId": 5,
+            "titulo": "Interestellar",
+            "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+            "id": 23,
+            "categoriaId": 5,
+            "titulo": "Gattaca",
+            "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+        },
+        {
+            "id": 24,
+            "categoriaId": 5,
+            "titulo": "A Chegada",
+            "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+        },
+        {
+            "id": 25,
+            "categoriaId": 5,
+            "titulo": "Feitiço do Tempo",
+            "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+        },
+        {
+            "id": 26,
+            "categoriaId": 6,
+            "titulo": "Final Fantasy 7",
+            "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+            "id": 27,
+            "categoriaId": 6,
+            "titulo": "Assassins Creed Valhalla",
+            "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+            "id": 28,
+            "categoriaId": 6,
+            "titulo": "God of War 4",
+            "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+            "id": 29,
+            "categoriaId": 6,
+            "titulo": "Resident Evil 8",
+            "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+            "id": 30,
+            "categoriaId": 6,
+            "titulo": "Pokémon Let's Go Pikachu/Eevee",
+            "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        },
+        {
+            "id": 31,
+            "categoriaId": 7,
+            "titulo": "Como estudar melhor?",
+            "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+            "id": 32,
+            "categoriaId": 7,
+            "titulo": "Faculdade",
+            "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+            "id": 33,
+            "categoriaId": 7,
+            "titulo": "Frameworks",
+            "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+            "id": 34,
+            "categoriaId": 7,
+            "titulo": "A mágica do Aprendizado",
+            "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+            "id": 35,
+            "categoriaId": 7,
+            "titulo": "Como aprender a programar?",
+            "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        }
+    ]
+}
