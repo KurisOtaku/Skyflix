@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import styled, { css } from 'styled-components';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForms';
 import Loading from '../../../components/Loading';
+import categoriasRepositor from '../../../repositories/categorias';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -17,9 +19,14 @@ function CadastroCategoria() {
 
   const [categorias, setCategorias] = useState([]);
 
-  useEffect(() => {
-    //    categoriasRepository.getAllCategoriesWithVideos();
+  const Li = styled.li`
+   color: "#0000ff",  
+  `;
 
+  useEffect(() => {
+    categoriasRepositor.getAll().then((resposta) => {
+      setCategorias(resposta);
+    });
   }, []);
 
   return (
@@ -66,17 +73,9 @@ function CadastroCategoria() {
       {categorias.length === 0 && <Loading />}
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.id}`}>
-            [
-            {categoria.id}
-            ][
+          <Li key={`${categoria.id}`} style={{ color: categoria.cor }}>
             {categoria.titulo}
-            ][
-            {categoria.descricao}
-            ][
-            {categoria.cor}
-            ]
-          </li>
+          </Li>
         ))}
       </ul>
       <Link to="/">Ir para home</Link>
