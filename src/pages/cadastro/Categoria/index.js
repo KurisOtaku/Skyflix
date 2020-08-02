@@ -4,6 +4,7 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForms';
+import Loading from '../../../components/Loading';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -17,14 +18,9 @@ function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    const URLCATEGORIAS = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://skyflix-seven.herokuapp.com/categorias';
-    fetch(URLCATEGORIAS).then(async (respostaServidor) => {
-      const resposta = await respostaServidor.json();
-      setCategorias([...resposta]);
-    });
-  }, [values.nome]);
+    //    categoriasRepository.getAllCategoriesWithVideos();
+
+  }, []);
 
   return (
     <PageDefault>
@@ -67,7 +63,7 @@ function CadastroCategoria() {
         <Button>Cadastrar</Button>
       </form>
 
-      {categorias.length === 0 && <div>Loading...</div>}
+      {categorias.length === 0 && <Loading />}
       <ul>
         {categorias.map((categoria) => (
           <li key={`${categoria.id}`}>
