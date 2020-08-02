@@ -55,6 +55,23 @@ function CadastroVideo() {
 
       </Modal>
 
+      <Link
+        to="/cadastro/categoria"
+        style={{
+          color: 'var(--white)',
+          border: '1px solid var(--white)',
+          background: 'var(--black)',
+          cursor: 'pointer',
+          padding: '16px 24px',
+          outline: 'none',
+          display: 'inline-block',
+          transition: 'opacity 0.3s',
+        }}
+
+      >
+        Cadastrar Categoria
+      </Link>
+
       <h1>Cadastro Video</h1>
       <form
         onSubmit={(event) => {
@@ -103,7 +120,6 @@ function CadastroVideo() {
         />
         <Button type="submit">Cadastrar</Button>
       </form>
-      <Link to="/cadastro/categoria">Cadastrar Categoria</Link>
     </PageDefault>
   );
 }

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link, useHistory } from 'react-router-dom';
 
 const Button = styled.button`
   color: var(--white);
@@ -20,5 +21,6 @@ const Button = styled.button`
     opacity: 0.5;
   }
 `;
+
 
 export default Button;

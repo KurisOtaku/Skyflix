@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import styled, { css } from 'styled-components';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
@@ -18,10 +17,6 @@ function CadastroCategoria() {
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
   const [categorias, setCategorias] = useState([]);
-
-  const Li = styled.li`
-   color: "#0000ff",  
-  `;
 
   useEffect(() => {
     categoriasRepositor.getAll().then((resposta) => {
@@ -73,9 +68,19 @@ function CadastroCategoria() {
       {categorias.length === 0 && <Loading />}
       <ul>
         {categorias.map((categoria) => (
-          <Li key={`${categoria.id}`} style={{ color: categoria.cor }}>
+          <li
+            key={`${categoria.id}`}
+            style={{
+              background: categoria.cor,
+              color: '#fff',
+              margin: '10px',
+              borderColor: '#fff',
+              border: '1px solid white',
+              textShadow: '1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000',
+            }}
+          >
             {categoria.titulo}
-          </Li>
+          </li>
         ))}
       </ul>
       <Link to="/">Ir para home</Link>
