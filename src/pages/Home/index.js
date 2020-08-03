@@ -37,7 +37,7 @@ function Home() {
           );
         }
         return (
-          <Carousel ignoreFirstVideo key={categoria.id} category={categoria} />
+          <Carousel key={categoria.id} category={categoria} />
         );
       })}
     </PageDefault>

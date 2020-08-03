@@ -16,7 +16,7 @@
       "titulo": "Front End",
       "link": "https://www.alura.com.br/formacao-front-end",
       "cor": "#000",
-      "descricao":  "Formação de Front End na Alura",
+      "descricao": "Formação de Front End na Alura",
       "link_extra": {
         "text": "Formação de Front End na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
@@ -62,11 +62,17 @@
       "id": 7,
       "titulo": "Aprendendo a aprender tecnologia",
       "cor": "#6b5be2",
-      "descricao":  "Curso sobre aprendizado na Alura",
+      "descricao": "Curso sobre aprendizado na Alura",
       "link_extra": {
         "text": "Curso sobre aprendizado na Alura",
         "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
       }
+    },
+    {
+      "titulo": "FullStack",
+      "descricao": "",
+      "cor": "#d4fd20",
+      "id": 8
     }
   ],
   "videos": [
@@ -297,6 +303,12 @@
       "titulo": "BNA: Brand New Animal - Ending Full『NIGHT RUNNING』by Shin Sakiura ft. AAAMYYY",
       "url": "https://www.youtube.com/watch?v=ea-ThJDGJ1Y",
       "id": 38
+    },
+    {
+      "categoriaId": 1,
+      "titulo": "The Chainsmokers & Coldplay - Something Just Like This (Lyric)",
+      "url": "https://www.youtube.com/watch?v=FM7MFYoylVs",
+      "id": 39
     }
   ]
 }

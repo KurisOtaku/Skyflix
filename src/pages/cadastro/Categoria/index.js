@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
@@ -8,15 +8,30 @@ import Loading from '../../../components/Loading';
 import categoriasRepositor from '../../../repositories/categorias';
 
 function CadastroCategoria() {
+  const randHexColor = () => { // RETORNA UM HEXADECIMAL ALEATÓRIO
+    const n = (Math.random() * 0xfffff * 1000000).toString(16);
+    return `#${n.slice(0, 6)}`;
+  };
+
+  const history = useHistory();
   const valoresIniciais = {
     titulo: '',
     descricao: '',
-    cor: '#0000ff',
+    cor: randHexColor(),
   };
 
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
   const [categorias, setCategorias] = useState([]);
+
+  function isValid({ titulo }) {
+    const exist = Boolean(categorias.find(
+      (categoria) => categoria.titulo === titulo,
+    ));
+    if (exist) return false;
+    if (titulo === '') return false;
+    return true;
+  }
 
   useEffect(() => {
     categoriasRepositor.getAll().then((resposta) => {
@@ -34,15 +49,25 @@ function CadastroCategoria() {
       <form
         onSubmit={function handleSubmit(event) {
           event.preventDefault();
-          setCategorias([...categorias, values]);
-          clearForm();
+          if (isValid(values)) {
+            categoriasRepositor.create({
+              titulo: values.titulo,
+              descricao: values.descricao,
+              cor: values.cor,
+            })
+              .then(() => {
+                setCategorias([...categorias, values]);
+                clearForm();
+                history.push('/cadastro/video');
+              });
+          }
         }}
       >
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -71,6 +96,7 @@ function CadastroCategoria() {
           <li
             key={`${categoria.id}`}
             style={{
+              textAlign: 'center',
               background: categoria.cor,
               color: '#fff',
               margin: '10px',

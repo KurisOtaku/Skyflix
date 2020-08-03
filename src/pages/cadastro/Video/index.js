@@ -32,10 +32,16 @@ function CadastroVideo() {
 
   // MODAL
   const modal = document.getElementById('myModal');
-  Modal.onclick = function () {
+  Modal.onclick = () => {
     modal.style.display = 'none';
   };
-  window.onclick = function (event) {
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+  const modalcontent = document.getElementsByClassName('modal-content');
+  modalcontent.onclick = (event) => {
     if (event.target === modal) {
       modal.style.display = 'none';
     }
@@ -87,12 +93,10 @@ function CadastroVideo() {
                 url: values.url,
               })
               .then(() => {
-                console.log('Cadastro enviado');
                 history.push('/');
               });
           } else {
             modal.style.display = 'block';
-            console.log('Invalidos');
           }
         }}
       >

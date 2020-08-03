@@ -106,9 +106,12 @@ function FormField({
           <datalist id={`suggestionFor_${fieldId}`}>
             {
             suggestions.map((suggestion) => (
+              !suggestion.includes('Kuris')
+              && (
               <option value={suggestion} key={`suggestionFor_${fieldId}_option${suggestion}`}>
                 {suggestion}
               </option>
+              )
             ))
           }
           </datalist>
