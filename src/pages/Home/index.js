@@ -7,12 +7,21 @@ import Loading from '../../components/Loading';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
+  const [destaquevideo, setDestaqueVideo] = useState({
+    id: 1,
+    categoriaId: 1,
+    titulo: 'Taishi feat. みとせのりこ - Rainscall',
+    url: 'https://www.youtube.com/watch?v=0b2N1vrmshs',
+  });
 
   useEffect(() => {
     categoriasRepository
       .getAllWithVideos()
       .then((categoriasComVideos) => {
         setDadosIniciais(categoriasComVideos);
+        const destaqueId = 0 + Math.floor((categoriasComVideos[0].videos.length - 1 - 0) * Math.random());
+        console.log(destaqueId);
+        setDestaqueVideo(categoriasComVideos[0].videos[destaqueId]);
       })
       .catch((err) => {
         console.log(err.message);
@@ -28,11 +37,11 @@ function Home() {
           return (
             <div key={categoria.id}>
               <BannerMain
-                videoTitle={dadosIniciais[0].videos[0].titulo}
-                url={dadosIniciais[0].videos[0].url}
+                videoTitle={destaquevideo.titulo}
+                url={destaquevideo.url}
               />
 
-              <Carousel ignoreFirstVideo category={dadosIniciais[0]} />
+              <Carousel category={dadosIniciais[0]} />
             </div>
           );
         }
