@@ -20,7 +20,6 @@ function Home() {
       .then((categoriasComVideos) => {
         setDadosIniciais(categoriasComVideos);
         const destaqueId = 0 + Math.floor((categoriasComVideos[0].videos.length - 1 - 0) * Math.random());
-        console.log(destaqueId);
         setDestaqueVideo(categoriasComVideos[0].videos[destaqueId]);
       })
       .catch((err) => {

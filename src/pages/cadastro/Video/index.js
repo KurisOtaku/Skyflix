@@ -32,16 +32,17 @@ function CadastroVideo() {
 
   // MODAL
   const modal = document.getElementById('myModal');
+  console.log(modal);
+  // eslint-disable-next-line eqeqeq
+  if (modal != undefined) {
+    modal.onclick = () => {
+      modal.style.display = 'none';
+    };
+  }
   Modal.onclick = () => {
     modal.style.display = 'none';
   };
   window.onclick = (event) => {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-    }
-  };
-  const modalcontent = document.getElementsByClassName('modal-content');
-  modalcontent.onclick = (event) => {
     if (event.target === modal) {
       modal.style.display = 'none';
     }
@@ -52,14 +53,7 @@ function CadastroVideo() {
 
       <Modal
         id="myModal"
-        className="modal"
-      >
-        <div className="modal-content">
-          <span className="close">&times;</span>
-          <p>Preencha corretamente os campos</p>
-        </div>
-
-      </Modal>
+      />
 
       <Link
         to="/cadastro/categoria"
