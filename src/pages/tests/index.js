@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import PageDefault from '../../components/PageDefault';
 import Repository from '../../repositories/categorias';
 
 function Tests() {
@@ -9,16 +8,16 @@ function Tests() {
     Repository
       .getTest()
       .then((list) => {
-        setDadosIniciais(list);
+        setDadosIniciais(JSON.stringify(list));
         console.log(list);
       })
       .catch((err) => {
-        console.log(err.message);
+        console.log(err);
       });
   }, []);
 
   return (
-    <div>{JSON.stringify(cars)}</div>
+    <div>{cars}</div>
   );
 }
 

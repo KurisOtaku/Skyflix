@@ -24,14 +24,13 @@ function getAll() {
 
 function getTest() {
   // return fetch(`${config.URL_TEST}`)
-  fetch(config.URL_TEST, {
-    method: 'GET',
-    mode: 'cors',
-  }).then(async (respostaServidor) => {
+
+  return fetch(config.URL_TEST).then(async (respostaServidor) => {
     if (respostaServidor.ok) {
       const resposta = await respostaServidor.json();
       return resposta;
     }
+    console.log(respostaServidor);
     throw new Error('Não foi possível pegar os dados');
   });
 }
@@ -45,12 +44,12 @@ function create(objetoCategoria) {
       },
       body: JSON.stringify(objetoCategoria),
     }).then(async (respostaServidor) => {
-    if (respostaServidor.ok) {
-      const resposta = await respostaServidor.json();
-      return resposta;
-    }
-    throw new Error('Não foi possível pegar os dados');
-  });
+      if (respostaServidor.ok) {
+        const resposta = await respostaServidor.json();
+        return resposta;
+      }
+      throw new Error('Não foi possível pegar os dados');
+    });
 }
 
 export default {
