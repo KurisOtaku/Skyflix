@@ -7,12 +7,14 @@ import Pagina404 from './pages/Pagina404';
 
 import CadastroVideo from './pages/cadastro/Video';
 import CadastroCategoria from './pages/cadastro/Categoria';
+import Tests from './pages/tests';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/cadastro/video" component={CadastroVideo} />
       <Route path="/cadastro/categoria" component={CadastroCategoria} />
+      <Route path="/tests" component={Tests} />
       <Route path="/" component={Home} exact />
       <Route component={Pagina404} />
     </Switch>
