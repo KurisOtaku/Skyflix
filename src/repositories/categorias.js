@@ -23,7 +23,11 @@ function getAll() {
 }
 
 function getTest() {
-  return fetch(`${config.URL_TEST}`).then(async (respostaServidor) => {
+  // return fetch(`${config.URL_TEST}`)
+  fetch(config.URL_TEST, {
+    method: 'GET',
+    mode: 'cors',
+  }).then(async (respostaServidor) => {
     if (respostaServidor.ok) {
       const resposta = await respostaServidor.json();
       return resposta;
